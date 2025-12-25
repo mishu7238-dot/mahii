@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background: #fdfdfd;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.top-header {
+  background: linear-gradient(90deg, #772dff 0%, #9e4fff 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.top-header .contact-info {
+  display: flex;
+}
+
+.top-header .contact-info .info {
+  padding: 17px 26px;
+}
+
+.top-header .contact-info .info:last-child {
+  background: linear-gradient(to right, #0ba9ff 0%, #56d9ff 51%, #0ba9ff 100%);
+  background-size: 200% auto;
+   padding: 0px 38px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 50px;
+  outline: none !important;
+  box-shadow: 0px 0px 15px rgba(108, 39, 255, 0.3);
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+/* END SECTION  */
+
+/* START OF MAIN HEADER SECTION */
+.main-header {
+  padding: 20px 30px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
+
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* END SECTION  */
+
+/* START OF BANNER SECTION  */
+.banner {
+  width: 100%;
+  height: 90vh;
+}
+
+.banner .b-img {
+  background: url(image/doctor\ images.jfif) no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.banner .b-img .content-b {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+
+.banner .b-img .content-b h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 54px;
+  font-family: "Playfair Display", serif;
+}
+
+.banner .b-img .content-b p {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 25px 0 45px;
+}
+
+.banner .b-img .content-b .banner-btn {
+  background: linear-gradient(to right, #0ba9ff 0%, #56d9ff 51%, #0ba9ff 100%);
+  background-size: 200% auto;
+  padding: 0px 38px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 50px;
+  border-radius: 50px;
+  outline: none !important;
+  box-shadow: 0px 0px 15px rgba(108, 39, 255, 0.3);
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+/* END SECTION */
+
+/* START OF SECTION */
+.services {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.services-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.service-item:hover {
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+ 
+}
+
+.icon-box {
+  min-width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  color: white;
+  border-radius: 10px 0 10px 10px;
+}
+
+.bg-blue {
+  background-color: #3b82f6;
+}
+
+.bg-purple {
+  background-color: #8b5cf6;
+}
+
+.bg-cyan {
+  background-color: #06b6d4;
+}
+
+.service-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: #223a66;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.service-content p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  max-width: 1200px;
+}
+
+.service-link {
+  font-weight: 600;
+  color: #111;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+  transition: color 0.3s;
+  margin-left: 10px;
+}
+
+.service-link:hover {
+  color: #3b82f6;
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+/* END OF SECTION */
+
+/* START OF TIME TABLE SECTION */
+.welcome-wrapper {
+  display: flex;
+  align-items: stretch;
+  height: 500px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.content-side {
+  flex: 1;
+  padding: 0px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-side h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #223a66;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.content-side p {
+  color: #777;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-item {
+  display: flex;
+  gap: 15px;
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.feature-item p {
+  margin-bottom: 0;
+}
+
+.feature-item span {
+  color: #8b5cf6;
+  font-weight: bold;
+}
+
+.image-side {
+  flex: 1;
+  background: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1000') center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timetable-overlay {
+  background: rgba(139, 92, 246, 0.9);
+  color: white;
+  padding: 50px;
+  width: 70%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timetable-overlay h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.time-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.time-row:last-child {
+  border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .welcome-wrapper {
+    flex-direction: column;
+  }
+
+  .content-side,
+  .image-side {
+    flex: none;
+    width: 100%;
+  }
+
+  .image-side {
+    height: 500px;
+  }
+}
+
+/* END OF SECTION */
+
+/* START */
+.departments-container {
+  width: 100%;
+  padding: 100px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.header-area {
+  padding: 0px;
+  max-width: 650px;
+  margin: 0 auto 80px auto;
+}
+
+.header-area h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.header-area p {
+  font-size: 15px;
+  color: #777777;
+  line-height: 1.6;
+}
+
+.dept-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+}
+
+.dept-card {
+  background: #ffffff;
+  width: 160px;
+  margin-right: 10px;
+  padding: 20px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dept-card:hover {
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.dept-icon {
+  height: 60px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
+
+.dept-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #222222;
+  font-weight: 700;
+}
+
+.btn-learn-more {
+  display: inline-block;
+  padding: 15px 45px;
+  background: linear-gradient(to right, #24b6ff 0%, #6be0ff 100%);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0px 10px 20px rgba(36, 182, 255, 0.3);
+  transition: 0.3s;
+}
+
+.btn-learn-more:hover {
+  box-shadow: 0px 15px 25px rgba(36, 182, 255, 0.5);
+  transform: scale(1.05);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .header-area h2 {
+    font-size: 32px;
+  }
+
+  .dept-card {
+    width: 45%;
+  }
+}
+
+/* END OF SECTION */
+
+/* START COUNTER SECTION */
+.stats-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.blur-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background-image: url(image/97c83d37-0495-465e-92b4-0390099009f2.jfif);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(5px);
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.stats-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 250px;
+  height: 300px;
+  text-align: center;
+  color: #ffffff;
+  padding: 40px 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.stat-value {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.stat-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  max-width: 160px;
+  margin: 50px auto;
+  text-transform: capitalize;
+  opacity: 0.95;
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 768px) {
+  .stat-value {
+    font-size: 50px;
+  }
+
+  .stat-item {
+    min-width: 50%;
+  }
+
+  .blur-background {
+    background-attachment: scroll;
+  }
+}
+
+/* END OF SECTION */
+
+/* START OF MEDICARE DEPARTMENTS SECTION */
+.team-section {
+  padding: 100px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.team-header {
+  max-width: 650px;
+  margin: 0 auto 100px auto;
+}
+
+.team-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+.team-header p {
+  font-size: 14px;
+  color: #777777;
+  line-height: 1.8;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.doctor-card {
+  flex: 1;
+  min-width: 260px;
+  max-width: 280px;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 0 0 40px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-img {
+  width: 100%;
+  height: auto;
+  margin-top: -60px;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.img-wrapper {padding: 0 40px;
+}
+
+.social-icons {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  color: #cccccc;
+  font-size: 14px;
+}
+
+.doctor-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #222222;
+  margin-bottom: 5px;
+}
+
+.doctor-card span {
+  display: block;
+  font-size: 12px;
+  color: #777777;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.doctor-card p {
+  font-size: 13px;
+  color: #777777;
+  line-height: 1.7;
+  padding: 0 25px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .team-header h2 {
+    font-size: 32px;
+  }
+
+  .team-grid {
+    gap: 80px;
+  }
+
+  .doctor-card {
+    max-width: 100%;
+  }
+}
+
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  width: 35px;
+  height: 35px;
+  background: #2b2b2b;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #24b6ff;
+}
+    .team{
+        display: grid;
+        grid-template-columns: auto-fit,minmax(250px,1fr);
+        gap: 20px;
+        padding: 40px;
+    }
+    .card{
+        background: #faf9f9;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 15px 15px rgba(12, 10, 10, 0.1);
+        transition: 0.3s;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+    
+    }
+    .card:hover{
+        transform: translateY(-10px);
+    }
+    .card img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+    .card h2{
+          margin-bottom: 20px;
+    }
+    .card h4{
+      text-align: left;
+      margin-left: 10px;
+      margin-bottom: 10px;
+  
+    }
+    .card p{
+      font-size: 10px;
+      text-align: left;
+      margin-left: 10px;
+    }
+    .card h3{
+        margin: 5px 0;
+    }
+    .role{
+        color: rgb(22, 22, 22);
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .desc{
+        font-size: 13px;
+        color: black;
+        margin: 10px 0;
+    }
+    .icons i{
+        margin: 0 8px;
+        color: azure;
+        cursor: pointer;
+    }
+    .icons i:hover{
+        color: blueviolet;
+    }
+    .blog-appointment{
+  display: flex;
+  gap: 40px;
+  padding: 50px;
+  background: #f7f7f7;
+}
+
+/* LEFT */
+.blogs{
+  width: 50%;
+}
+
+.blog-card{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-card img{
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.container{
+    display: inline-flex;
+}
+/* RIGHT */
+.appointment{
+  width: 50%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.appointment input,
+.appointment textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.appointment button{
+  width: 100%;
+  padding: 12px;
+  background: #0a0c0c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.container{
+    display: inline-flex;
+}
+.footer{
+  background: #0c0c0c;
+  height: 250px;
+  color: #fffdfd;
+  padding: 50px 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer-container{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.footer-box{
+  flex: 1;
+}
+.footer-box h3{
+  color: #fdfcfc;
+  margin-bottom: 15px;
+}
+.footer-box p{
+  font-size: 10px;
+  line-height: 20px;
+  margin-right: 20px;
+}
+.phone{
+  font-size: 18px;
+  color: #fcfbfb;
+  font-weight: bold;
+}
+.footer-box input{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.footer-box button{
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #070707;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 10px;
+}
+.footer-box button:hover{
+  background: #0c0c0c;
+}
+.copyright{
+text-align: center;
+background-color: #0a0a0a;
+margin-top: 40px;
+font-size: 14px;
+color: #757272;
+margin-left: 10px;
+width: 100%;
+}
+</style>
+<body>
+  <header>
+    <div class="top-header">
+      <div class="lang">ENGLISH</div>
+      <div class="contact-info">
+        <div class="info">+953 012 3654 896</div>
+        <div class="info">support@colorlib.com</div>
+        <div class="info">Appointment</div>
+      </div>
+    </div>
+    <div class="main-header">
+      <div class="logo">
+        <img src="image/logo.doctor.png" alt="logo">
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Department</a>
+          </li>
+          <li>
+            <a href="#">Pages</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="banner">
+    <div class="b-img">
+      <div class="content-b">
+        <h2>
+          Growing up your <br>
+          children with our most <br>
+          smart monitization
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore et
+          dolore
+          magna aliqua.
+        </p>
+        <button class="banner-btn">LEARN MORE</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="services-section">
+      <article class="service-item">
+        <div class="icon-box bg-blue">✚</div>
+        <div class="service-content">
+          <h3>Emergency Services</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+          <a href="tel:21536959584" class="service-link">Call Us: 215 - 3695 - 9584</a>
+        </div>
+      </article>
+
+      <article class="service-item">
+        <div class="icon-box bg-purple">🕒</div>
+        <div class="service-content">
+          <h3>Doctors Schedule</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+          <a href="#" class="service-link">Learn More</a>
+        </div>
+      </article>
+
+      <article class="service-item">
+        <div class="icon-box bg-cyan">📅</div>
+        <div class="service-content">
+          <h3>Online Appointment</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+          <a href="#" class="service-link">Get Appointment</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="welcome-wrapper">
+    <div class="content-side">
+      <h1>Welcome to Medicare Center</h1>
+      <p>Inappropriate behavior is often laughed off as "boys will be boys," women face higher conduct standards
+        especially in the workplace. That's why it's crucial that, as women, our behavior on the job is beyond reproach.
+      </p>
+
+      <div class="feature-list">
+        <div class="feature-item">
+          <span>»</span>
+          <p>Women face higher conduct standards especially in the workplace that's why it's crucial that.</p>
+        </div>
+        <div class="feature-item">
+          <span>»</span>
+           <p>Women face higher conduct standards especially in the workplace that's why it's crucial that.</p>
+        </div>
+        <div class="feature-item">
+          <span>»</span>
+          <p>Women face higher conduct standards especially in the workplace that's why it's crucial that.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-side">
+      <div class="timetable-overlay">
+        <h2>Doctors Time table</h2>
+
+        <div class="time-row">
+          <span>Mon to Friday</span>
+          <span>07.00 AM to 10.00 PM</span>
+        </div>
+        <div class="time-row">
+          <span>Mon to Friday</span>
+          <span>07.00 AM to 10.00 PM</span>
+        </div>
+        <div class="time-row">
+          <span>Mon to Friday</span>
+          <span>07.00 AM to 10.00 PM</span>
+        </div>
+        <div class="time-row">
+          <span>Mon to Friday</span>
+          <span>07.00 AM to 10.00 PM</span>
+        </div>
+        <div class="time-row">
+          <span>Mon to Friday</span>
+          <span>07.00 AM to 10.00 PM</span>
+        </div>
+        <div class="time-row">
+          <span>Mon to Friday</span>
+          <span>07.00 AM to 10.00 PM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="departments-container">
+    <div class="header-area">
+      <h2>Medicare Popular Departments</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.</p>
+    </div>
+
+    <div class="dept-grid">
+      <article class="dept-card">
+        <div class="dept-icon">
+        <img src="image/cardiology.png" width="100%" height="50px"></div>
+        <h3>Cardiology</h3>
+      </article>
+
+      <article class="dept-card">
+        <div class="dept-icon">🩺</div>
+        <h3>Urology</h3>
+      </article>
+
+      <article class="dept-card">
+        <div class="dept-icon">🦷</div>
+        <h3>Dental Care</h3>
+      </article>
+
+      <article class="dept-card">
+        <div class="dept-icon">👁️</div>
+        <h3>Eye Care</h3>
+      </article>
+
+      <article class="dept-card">
+        <div class="dept-icon">🧠</div>
+        <h3>Neurology</h3>
+      </article>
+
+      <article class="dept-card">
+        <div class="dept-icon">🔬</div>
+        <h3>Plastic Surgery</h3>
+      </article>
+    </div>
+
+    <a href="#" class="btn-learn-more">Learn More</a>
+  </section>
+  <!-- END OF SECTION -->
+
+  <!-- START COUNTER SECTION -->
+  <section class="stats-wrapper">
+    <div class="blur-background"></div>
+
+    <div class="stats-container">
+
+      <div class="stat-item">
+        <span class="stat-value" data-val="30">30k</span>
+        <p class="stat-title">Years of Experiences</p>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-value" data-val="2">2k+</span>
+        <p class="stat-title">Instant Blood Donors</p>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-value" data-val="5">5k+</span>
+        <p class="stat-title">Well Cured Patients</p>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-value" data-val="20">20k+</span>
+        <p class="stat-title">Internal Stuff Groups</p>
+      </div>
+
+    </div>
+  </section>
+  
+    </div>
+  </section>
+   <section class="team">
+      <div class="container">
+        <div class="card">
+            <img src="image/member1.png" alt="Doctor">
+            <h3>Ethel Davis</h3>
+            <p class="role">Sr. Faculty Data Science</p>
+<p class="desc">If you are looking at blank cassettes on the web, you may be very confused at the difference in price.</p>
+
+</div>
+    <div class="card">
+            <img src="image/member2.png" alt="Doctor">
+            <h3>Rodney Cooper</h3>
+            <p class="role">Sr. Faculty Data Science</p>
+<p class="desc">If you are looking at blank cassettes on the web, you may be very confused at the difference in price.</p>
+</div>
+        <div class="card">
+            <img src="image/member3.png" alt="Doctor">
+            <h3>Dave Walker</h3>
+            <p class="role">Sr. Faculty Data Science</p>
+<p class="desc">If you are looking at blank cassettes on the web, you may be very confused at the difference in price.</p>
+</div>
+<div class="card">
+            <img src="image/member4.png" alt="Doctor">
+            <h3>Lena keller</h3>
+            <p class="role">Sr. Faculty Data Science</p>
+<p class="desc">If you are looking at blank cassettes on the web, you may be very confused at the difference in price.</p>
+        </div>
+    </div>
+    </div>
+    </section>
+    <div class="container">
+      <div class="card">
+    <h2>Our Recent Blogs</h2>
+
+    <div class="blog-card">
+      <img src="image/blog1.jpg" alt="">
+      <div>
+        <h4>Portable Fashion for women</h4>
+        <p>Lorem ipsum dolor sit amet, con
+        sectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+      </div>
+    </div>
+    
+    <div class="blog-card">
+      <img src="image/blog2.jpg" alt="">
+      <div>
+        <h4>Portable Fashion for women</h4>
+        <p>Lorem ipsum dolor sit amet, con
+        sectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="image/blog3.jpg" alt="">
+      <div>
+        <h4>Portable Fashion for women</h4>
+        <p>Lorem ipsum dolor sit amet, con
+        sectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+      </div>
+    </div>
+    </div>
+  <div class="appointment">
+    <h2>Make an Appointment</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <input type="date">
+      <textarea placeholder="Message"></textarea>
+      <button>Book Now</button>
+    </form>
+  </div>
+</div>
+</div>
+</section>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-box">
+      <h3>About Us</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+      elit, sed do eiusmod tempor incididunt ut labore dolore
+       magna aliqua.</p>
+    </div>
+    <div class="footer-box">
+      <h3>Contact Us</h3>
+      <p class="phone">012-6532-568-9746</p>
+      <p class="phone">012-6532-569-9748</p>
+    </div>
+    <div class="footer-box">
+      <h3>Newsletter</h3>
+      <input type="email" placeholder="email Address">
+      <button>GET STARTED</button>
+    </div>
+  </div>
+  <div class="copyright">
+  <p class="cpyright">
+    Copyright ©2025 All rights reserved | This template is made with  by Colorlib
+  </p>
+  </div>
+</footer>
+</body>
+</html>
