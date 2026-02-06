@@ -72,5 +72,35 @@
             <button>0</button>
         </div>
     </div>
+    <script>
+    const display = document.querySelector(".display");
+    const buttons = document.querySelectorAll("button");
+
+    let expression = "";
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            let value = btn.innerText;
+
+            if (value === "C") {
+                expression = "";
+                display.value = "";
+            }
+            else if (value === "=") {
+                try {
+                    expression = eval(expression);
+                    display.value = expression;
+                } catch {
+                    display.value = "Error";
+                    expression = "";
+                }
+            }
+            else {
+                expression += value;
+                display.value = expression;
+            }
+        });
+    });
+</script>
 </body>
 </html>
