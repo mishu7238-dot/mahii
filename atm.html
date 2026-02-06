@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple ATM Machine</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #fcfcfc;
+            text-align: center;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+        .atm {
+            background: rgb(243, 166, 189);
+            width: 700px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input, button {
+            margin: 8px;
+            padding: 8px;
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="atm">
+    <h2>Simple ATM Machine</h2>
+    <img src="image/atm.jpg.jfif" alt="atm image" width="500px">
+
+    <h3 id="balance">Current Balance: 10000</h3>
+
+    <input type="number" id="amount" placeholder="Enter amount">
+
+    <button onclick="deposit()">Deposit</button>
+    <button onclick="withdraw()">Withdraw</button>
+</div>
+
+<script>
+    let balance = 10000;
+
+    function deposit() {
+        let amt = Number(document.getElementById("amount").value);
+        if (amt > 0) {
+            balance += amt;
+            document.getElementById("balance").innerText =
+                "Current Balance: " + balance;
+        }
+    }
+
+    function withdraw() {
+        let amt = Number(document.getElementById("amount").value);
+        if (amt > 0 && amt <= balance) {
+            balance -= amt;
+            document.getElementById("balance").innerText =
+                "Current Balance: " + balance;
+        } else {
+            alert("Insufficient Balance");
+        }
+    }
+</script>
+</body>
+</html>
